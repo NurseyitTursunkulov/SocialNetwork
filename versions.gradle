@@ -10,6 +10,8 @@ versions.runner = "1.2.0"
 versions.espresso = "3.2.0"
 versions.livecycle = "2.0.0"
 versions.navigation = "2.1.0-alpha05"
+versions.work_ktx = "2.1.0-beta01"
+versions.fragment_ktx = "1.1.0-beta01"
 versions.paging = "2.1.0"
 versions.retrofit = '2.6.0'
 versions.okhttp = "3.12.0"
@@ -42,7 +44,10 @@ architecture.lifecycle_runtime = "androidx.lifecycle:lifecycle-runtime:$versions
 architecture.lifecycle_compiler = "androidx.lifecycle:lifecycle-compiler:$versions.livecycle"
 architecture.navigation_fragment = "androidx.navigation:navigation-fragment:$versions.navigation"
 architecture.navigation_ui = "androidx.navigation:navigation-ui:$versions.navigation"
+architecture.viewmodel = "androidx.lifecycle:lifecycle-viewmodel:$versions.navigation"
 architecture.paging = "androidx.paging:paging-runtime:$versions.paging"
+architecture.runtime_ktx = "androidx.work:work-runtime-ktx:$versions.work_ktx"
+architecture.fragment_ktx = "androidx.fragment:fragment-ktx:$versions.fragment_ktx"
 deps.architecture = architecture
 
 def retrofit = [:]
@@ -68,49 +73,4 @@ room.compiler = "androidx.room:room-compiler:$versions.room"
 room.ktx = "androidx.room:room-ktx:$versions.room"
 deps.room = room
 
-
 ext.deps = deps
-
-
-/*
-com.squareup.okhttp3:okhttp:
-def nav_version = "2.1.0-alpha05"
-
-implementation "androidx.navigation:navigation-fragment:$nav_version" // For Kotlin use navigation-fragment-ktx
-implementation "androidx.navigation:navigation-ui:$nav_version" // For Kotlin use navigation-ui-ktx
-
-def paging_version = "2.1.0"
-
-implementation "androidx.paging:paging-runtime:$paging_version" // For Kotlin use paging-runtime-ktx
-
-def work_version = "2.0.1"
-
-
-// Kotlin + coroutines
-implementation "androidx.work:work-runtime-ktx:$work_version"
-
-//Retrofit2
-implementation 'com.squareup.retrofit2:retrofit:2.6.0'
-implementation 'com.squareup.retrofit2:converter-gson:2.6.0'
-implementation 'com.squareup.retrofit2:adapter-rxjava2:2.6.0'
-implementation 'com.squareup.retrofit2:converter-scalars:2.6.0'
-//Okhttp3
-def okhttp3_version = "3.12.0"
-implementation "com.squareup.okhttp3:okhttp:$okhttp3_version"
-implementation 'com.squareup.okhttp3:logging-interceptor:3.14.0'
-
-//glide
-implementation 'com.github.bumptech.glide:glide:4.9.0'
-annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
-
-def room_version = "2.1.0-rc01"
-
-implementation "androidx.room:room-runtime:$room_version"
-annotationProcessor "androidx.room:room-compiler:$room_version"
-// For Kotlin use kapt instead of annotationProcessor
-
-// optional - Kotlin Extensions and Coroutines support for Room
-implementation "androidx.room:room-ktx:$room_version"
-
-// Test helpers
-testImplementation "androidx.room:room-testing:$room_version"*/

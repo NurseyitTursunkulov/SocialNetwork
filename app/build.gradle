@@ -24,7 +24,7 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation deps.support.app_compat
     implementation deps.support.ktx
     implementation deps.support.constraint
@@ -36,11 +36,14 @@ dependencies {
     androidTestImplementation deps.test.runner
     androidTestImplementation deps.test.espresso
     androidTestImplementation deps.test.core_testing
-    
+
     implementation deps.architecture.lifecycle_extensions
     implementation deps.architecture.lifecycle_runtime
     implementation deps.architecture.navigation_fragment
     implementation deps.architecture.navigation_ui
+    implementation deps.architecture.viewmodel
+    implementation deps.architecture.runtime_ktx
+    implementation deps.architecture.fragment_ktx
     annotationProcessor deps.architecture.lifecycle_compiler
     implementation deps.architecture.paging
 
@@ -58,4 +61,5 @@ dependencies {
     implementation deps.room.runtime
     implementation deps.room.ktx
     annotationProcessor deps.room.compiler
+
 }
