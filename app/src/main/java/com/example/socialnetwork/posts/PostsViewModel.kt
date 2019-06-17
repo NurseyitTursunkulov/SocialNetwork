@@ -1,4 +1,4 @@
-package com.example.socialnetwork
+package com.example.socialnetwork.posts
 
 import androidx.lifecycle.ViewModel
 
