@@ -54,7 +54,7 @@ dependencies {
 
     def paging_version = "2.1.0"
 
-    implementation "androidx.paging:paging-runtime:$paging_version" // For Kotlin use paging-runtime-ktx
+    implementation "androidx.paging:paging-runtime-ktx:$paging_version" // For Kotlin use com.example.socialnetwork.paging-runtime-ktx
 
     def work_version = "2.0.1"
 
@@ -68,6 +68,7 @@ dependencies {
     implementation "com.squareup.retrofit2:retrofit:2.6.0"
     implementation "com.squareup.retrofit2:converter-moshi:2.6.0"
     implementation "com.jakewharton.retrofit:retrofit2-kotlin-coroutines-adapter:0.9.2"
+    implementation 'com.squareup.retrofit2:converter-gson:2.5.0'
 
     //Okhttp3
     def okhttp3_version = "3.12.0"
