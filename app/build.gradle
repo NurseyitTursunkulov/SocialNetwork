@@ -97,4 +97,6 @@ dependencies {
     testImplementation "org.koin:koin-test:2.0.1"
     androidTestImplementation "org.koin:koin-test:2.0.1"
     implementation "org.koin:koin-core:2.0.1"
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
 }
