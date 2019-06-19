@@ -48,6 +48,7 @@
                     android:layout_width="35dp"
                     android:layout_height="33dp"
                     app:srcCompat="@drawable/tree"
+                    android:scaleType="centerCrop"
                     android:id="@+id/avatar"
                     app:layout_constraintStart_toStartOf="parent"
                     android:layout_marginLeft="16dp"
@@ -78,12 +79,11 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/name"
                     android:textColor="#9C000000"
-                    app:layout_constraintStart_toStartOf="@+id/title"
-                    android:layout_marginEnd="8dp"
-                    app:layout_constraintEnd_toStartOf="@+id/guideline2"
-                    android:layout_marginRight="8dp"
-                    android:layout_marginBottom="16dp"
                     app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/title"
+                    app:layout_constraintStart_toEndOf="@+id/avatar"
+                    android:layout_marginStart="16dp"
                     />
 
             <androidx.constraintlayout.widget.Guideline

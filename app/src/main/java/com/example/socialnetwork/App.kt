@@ -10,7 +10,6 @@ import org.koin.dsl.module
 class App : Application() {
     override fun onCreate() {
         super.onCreate()
-        // Start Koin
         startKoin{
             androidLogger()
             androidContext(this@App)
