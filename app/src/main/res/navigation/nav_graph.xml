@@ -2,8 +2,13 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:app="http://schemas.android.com/apk/res-auto"
             xmlns:tools="http://schemas.android.com/tools" android:id="@+id/nav_graph"
-            app:startDestination="@id/postsFragment">
+            app:startDestination="@id/postsHolderFragment">
 
     <fragment android:id="@+id/postsFragment" android:name="com.example.socialnetwork.posts.PostsFragment"
               android:label="fragment_posts" tools:layout="@layout/fragment_posts"/>
+    <fragment
+            android:id="@+id/postsHolderFragment"
+            android:name="com.example.socialnetwork.posts.PostsHolderFragment"
+            android:label="fragment_posts_holder"
+            tools:layout="@layout/fragment_posts_holder"/>
 </navigation>

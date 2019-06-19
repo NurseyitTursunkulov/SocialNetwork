@@ -50,7 +50,7 @@ dependencies {
     implementation "androidx.navigation:navigation-ui:$nav_version"
 
     def paging_version = "2.1.0"
-    implementation "androidx.paging:paging-runtime-ktx:$paging_version" // For Kotlin use com.example.socialnetwork.paging-runtime-ktx
+    implementation "androidx.paging:paging-runtime-ktx:$paging_version"
 
     def work_version = "2.0.1"
 
@@ -82,13 +82,13 @@ dependencies {
 //    implementation "androidx.room:room-ktx:$room_version"
 
 
-
     // Koin
     implementation "org.koin:koin-android:2.0.1"
     implementation 'org.koin:koin-android-viewmodel:2.0.1'
     testImplementation "org.koin:koin-test:2.0.1"
     androidTestImplementation "org.koin:koin-test:2.0.1"
     implementation "org.koin:koin-core:2.0.1"
+    implementation 'androidx.viewpager:viewpager:1.0.0'
 
 
 }

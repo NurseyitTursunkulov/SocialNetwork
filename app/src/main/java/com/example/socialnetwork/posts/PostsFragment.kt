@@ -23,7 +23,6 @@ class PostsFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        toolbar.title = "Posts"
         recycler_view.apply {
             layoutManager = LinearLayoutManager(this@PostsFragment.context)
             adapter = PostAdapter()
